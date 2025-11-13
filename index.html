@@ -39,7 +39,7 @@
 <body>
 <div class="container">
   <aside class="sidebar">
-    <h1>Windy City Weapons</h1>
+    <h1>BIC Weapons</h1>
     <p>Your trusted firearm lookup database.</p>
     <label class="label">Search</label>
     <input id="search" type="text" placeholder="Search weapons…" />
@@ -52,6 +52,7 @@
     <div class="tabs" style="margin-top:10px; margin-bottom:15px; display:flex; gap:6px;">
         <button data-tier="1">Tier 1</button>
         <button data-tier="2">Tier 2</button>
+        <button data-tier="drugs">Drugs</button>
         <button data-tier="all">All</button>
     </div>
     <label class="label">Filter by Category</label>
@@ -122,7 +123,8 @@
     { id:"bdraco", name:"Black Draco", type:"rifle", price:1200, desc:"Compact 9mm handgun.", img:"https://r2.fivemanage.com/Nlk2I6guxT1DoZVWOPhxM/weapon_bdraco.png", tier:2 },
     { id:"g45magholder", name:"G45 Mag Holder", type:"pistol", price:1400, desc:"Standard US service rifle.", img:"https://r2.fivemanage.com/Nlk2I6guxT1DoZVWOPhxM/weapon_g45wing.png", tier:2 },
     { id:"krissvector", name:"Kriss Vector", type:"smg", price:1400, desc:"Standard US service rifle.", img:"https://r2.fivemanage.com/Nlk2I6guxT1DoZVWOPhxM/weapon_krissvector.png", tier:2 },
-    { id:"mcx", name:"Sig MCX", type:"rifle", price:1400, desc:"Standard US service rifle.", img:"https://r2.fivemanage.com/Nlk2I6guxT1DoZVWOPhxM/weapon_gharp.png", tier:2 }
+    { id:"mcx", name:"Sig MCX", type:"rifle", price:1400, desc:"Standard US service rifle.", img:"https://r2.fivemanage.com/Nlk2I6guxT1DoZVWOPhxM/weapon_gharp.png", tier:2 },
+  
   ];
   const grid = document.getElementById("grid");
   const search = document.getElementById("search");
@@ -189,4 +191,5 @@
   render();
 </script>
 </body>
+
 </html>
